@@ -1,0 +1,74 @@
+.relative {
+	position: relative;
+	width: 600px;
+	height: 500px;
+	background-color: darkblue;
+	margin: 0 auto;
+	transition: 2s all linear 1s;
+	
+}
+
+.relative:hover {
+	background-color: yellow;
+	border: 40px solid black;
+}
+.absolute {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	background-color: red;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg); 
+	transition: 2s all linear 1s;
+}
+
+.absolute:hover {
+	background-color: green;
+	transform: translate(-50%, -50%) rotate(90deg); 
+}
+
+.logo-box {
+	width: 700px;
+	height: 500px;
+	position: relative;
+	border: 5px solid black;
+	margin: 0 auto;
+}
+
+.logo {
+	width: 50px;
+	position: absolute;
+	animation: react 8s infinite alternate;
+}
+
+@keyframes react {
+	0% {top: 0; left: 0px;}
+	20% {top: 0; left: 90%; transform: rotate(360deg);}
+	40% {top: 90%; left: 90%; transform: rotate(0deg);}
+	60% {top: 90%; left: 0; transform: rotate(360deg);}
+	100% {top: 0; transform: rotate(0deg);}
+}
+
+/*section 2 end */
+
+/* section 3 start */
+
+.img {
+	opacity: 0.5;
+	transition: all 2s;
+	border-radius: 50px;
+	box-shadow: 8px 8px 8px red;
+}
+
+.img:hover {
+	opacity: 1;
+}
+
+.border {
+	width: 300px;
+	height: 100px;
+	background-color: cyan;
+	margin: 50px auto;
+	border-radius: 100px;
+}
